@@ -26,16 +26,16 @@ In other RPM-based distributions you need to build all the components from their
 sources.
 
 ======================
- Building from source
+ 소스부터 빌드해보기
 ======================
 
-All commands should be run from the DNF git checkout directory.
+모든 명령어는 dnf git 디렉터리에서 실행합니다.
 
-To install the build dependencies::
+컴파일(빌드) 종속성 설치하는 방법::
 
     sudo dnf builddep dnf.spec
 
-To build DNF::
+DNF를 컴파일하기::
 
     mkdir build;
     pushd build;
@@ -43,34 +43,34 @@ To build DNF::
     make;
     popd;
 
-To run DNF when compiled for Python2::
+DNF 를 파이썬2로 빌드하기::
 
     PYTHONPATH=`readlink -f .` bin/dnf-2 <arguments>
 
-To run DNF when compiled for Python3::
+DNF 를 파이썬3로 빌드하기::
 
     PYTHONPATH=`readlink -f .` bin/dnf-3 <arguments>
 
-If you want to build the manpages, use the option ``-DWITH_MAN=0`` with cmake.
+men 페이지를 사용할려면 ``-DWITH_MAN=0`` 를 cmake 와 함께 실행시킵시오.
 
-Man pages will be located in ``build/doc`` and can be read with ``man -l``, e.g::
+man 페이지 위치는 ``build/doc`` 입니다 men페이지를 읽으실려면 다음 명령어를 입력하시오. ``man -l``, e.g::
 
     man -l build/doc/dnf.8
 
 =============================
- Building and installing rpm
+ rpm 빌드 및 설치
 =============================
 
-From the DNF git checkout directory::
+DNF git 디렉터리에서 다음을 실행::
 
     $ tito build --test --rpm
     # dnf install /tmp/tito/noarch/*
 
 ===============
- Running tests
+ 작동 테스트
 ===============
 
-From the DNF git checkout directory::
+DNF git 디렉터리에서 다음을 실행::
 
     mkdir build;
     pushd build;
