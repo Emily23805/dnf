@@ -13,12 +13,12 @@ Dandified YUM (DNF) 은  `YUM <http://yum.baseurl.org/>`_ 의 업그레이드 �
 DNF와 모든 의존성은 Fedora 18 이상에서 사용할 수 있습니다.
 
 
-선택적으로copr://rpmsoftwaremanagement/dnf-nightly에서 구할수 있는 마지막 2개의 안정적인 페도라 버전에 대한 DNF 의 야간 빌드가 있는 저장소를 사용할수 있습니다 예를 들어 아래처럼 레포지토리를 활성화 할수 있습니다.
+선택적으로copr://rpmsoftwaremanagement/dnf-nightly에서 구할수 있는 마지막 2개의 안정적인 페도라 버전에 대한 DNF 의 야간 빌드가 있는 저장소를 사용할수 있습니다 예를 들어 아래처럼 레포지토리를 활성화 할수 있습니다.::
 
 
     dnf copr enable rpmsoftwaremanagement/dnf-nightly
 
-그다음 dnf 를 치십시오.
+그다음 dnf 를 치십시오.::
 
     sudo yum install dnf
 
@@ -51,7 +51,7 @@ DNF 를 파이썬3로 빌드하기::
 
     PYTHONPATH=`readlink -f .` bin/dnf-3 <arguments>
 
-men 페이지를 사용할려면 ``-DWITH_MAN=0`` 를 cmake 와 함께 실행시킵시오.
+만약 당신이 DNF 에 대한 men 페이지를 사용할려면 ``-DWITH_MAN=0`` 를 cmake 와 함께 실행시킵시오.
 
 man 페이지 위치는 ``build/doc`` 입니다 men페이지를 읽으실려면 다음 명령어를 입력하시오. ``man -l``, e.g::
 
