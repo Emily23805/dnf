@@ -4,7 +4,7 @@
 
 .. image:: https://raw.githubusercontent.com/rpm-software-management/dnf/gh-pages/logos/DNF_logo.png
  
-Dandified YUM (DNF) is the next upcoming major version of `YUM <http://yum.baseurl.org/>`_. It does package management using `RPM <http://rpm.org/>`_, `libsolv <https://github.com/openSUSE/libsolv>`_ and `hawkey <https://github.com/rpm-software-management/hawkey>`_ libraries. For metadata handling and package downloads it utilizes `librepo <https://github.com/tojaj/librepo>`_. To process and effectively handle the comps data it uses `libcomps <https://github.com/midnightercz/libcomps>`_.
+Dandified YUM (DNF) 은  `YUM <http://yum.baseurl.org/>`_의 업그레이드 버전입니다. 이 프로그램은 `RPM <http://rpm.org/>`_, `libsolv <https://github.com/openSUSE/libsolv>`_ 그리고 `hawkey <https://github.com/rpm-software-management/hawkey>`_ 라이브러리를 사용하여 작동합니다. 메타 데이터 처리 및 패키지 다운로드의 경우 `librepo <https://github.com/tojaj/librepo>`_를 사용하여 처리합니다. 컴퍼스 데이터를 효과적으로 처리하기위해  `libcomps <https://github.com/midnightercz/libcomps>`_를 사용합니다.
 
 ============
  Installing
