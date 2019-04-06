@@ -7,17 +7,18 @@
 Dandified YUM (DNF) 은  `YUM <http://yum.baseurl.org/>`_ 의 업그레이드 버전입니다. 이 프로그램은  `RPM <http://rpm.org/>`_, `libsolv <https://github.com/openSUSE/libsolv>`_ 그리고 `hawkey <https://github.com/rpm-software-management/hawkey>`_ 라이브러리를 사용하여 작동합니다. 메타 데이터 처리 및 패키지 다운로드의 경우 `librepo <https://github.com/tojaj/librepo>`_ 를 사용하여 처리합니다. 컴퍼스 데이터를 효과적으로 처리하기위해  `libcomps <https://github.com/midnightercz/libcomps>`_ 를 사용합니다.
 
 ============
- Installing
+ 설치하기
 ============
 
-DNF and all its dependencies are available in Fedora 18 and later, including the
-rawhide Fedora.
+DNF와 모든 의존성은 Fedora 18 이상에서 사용할 수 있습니다.
 
-Optionally you can use repositories with DNF nightly builds for last 2 stable Fedora versions available at copr://rpmsoftwaremanagement/dnf-nightly. You can enable the repository e.g. using:: 
+
+선택적으로copr://rpmsoftwaremanagement/dnf-nightly에서 구할수 있는 마지막 2개의 안정적인 페도라 버전에 대한 DNF 의 야간 빌드가 있는 저장소를 사용할수 있습니다 예를 들어 아래처럼 레포지토리를 활성화 할수 있습니다.
+
 
     dnf copr enable rpmsoftwaremanagement/dnf-nightly
 
-Then install DNF typing::
+그다음 dnf 를 치십시오.
 
     sudo yum install dnf
 
