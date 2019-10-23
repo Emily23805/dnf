@@ -53,7 +53,7 @@ DNF 를 파이썬3로 빌드하기::
 
 만약 당신이 DNF 에 대한 men 페이지를 사용할려면 ``-DWITH_MAN=0`` 를 cmake 와 함께 실행시킵시오.
 
-man 페이지 위치는 ``build/doc`` 입니다 men페이지를 읽으실려면 다음 명령어를 입력하시오. ``man -l``, e.g::
+man 페이지 위치는 ``build/doc`` 입니다 men페이지를 읽으실려면 다음 명령어를 입력하시오. ``man -l``, 예시::
 
     man -l build/doc/dnf.8
 
